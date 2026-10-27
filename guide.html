@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شرح برنامج Zizo Tech</title>
+<meta name="description" content="شرح برنامج Zizo Tech لمحلات اللابتوب خطوة بخطوة: البيع، الصيانة، السيريال والضمان، الأقساط، المخزن، الخزنة والتقارير.">
+<meta property="og:title" content="شرح برنامج Zizo Tech - بيشتغل إزاي؟">
+<meta property="og:image" content="https://3abdelaziz11-dev.github.io/zizohub-updates/logo.png">
+<link rel="icon" href="logo.png">
+<style>
+:root{--navy:#24378a;--bg:#f3f4f7;--card:#fff;--ink:#1d2433;--mut:#6b7488;--line:#dde1e8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Tahoma,"Segoe UI",Arial;background:var(--bg);color:var(--ink);line-height:1.9}
+.w{max-width:860px;margin:auto;padding:0 16px}
+header{background:var(--navy);color:#fff;padding:26px 0}
+.top{display:flex;align-items:center;gap:12px}
+.top img{width:48px;height:48px;border-radius:12px;background:#fff}
+.top b{font-size:21px}.top a{color:#fff;opacity:.85;font-size:14px}
+h1{font-size:26px;margin:16px 0 4px}
+.lead{opacity:.9;margin:0}
+nav{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:20px 0}
+nav b{display:block;margin-bottom:4px}
+nav a{display:inline-block;margin:3px 0 3px 14px;color:var(--navy);text-decoration:none;font-size:14.5px}
+section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 20px 14px;margin:14px 0}
+h2{font-size:19px;color:var(--navy);margin:12px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+ol,ul{margin:4px 0;padding-right:22px}li{margin:3px 0}
+kbd{background:#f1f3f6;border:1px solid #c9ced8;border-bottom-width:2px;border-radius:5px;padding:0 6px;font-family:Consolas,monospace;font-size:13px}
+.tip{background:#eef3fb;border:1px solid #b9c8e3;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:14.5px}
+.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:6px 14px;font-size:14.5px}
+@media(max-width:600px){.keys{grid-template-columns:1fr 1fr}h1{font-size:22px}}
+.cta{text-align:center;margin:26px 0}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:10px;padding:11px 22px;margin:4px;color:#fff}
+.btn.navy{background:var(--navy)}.btn.wa{background:#1f9d55}
+footer{margin-top:30px;padding:20px 0;background:#e6e8ee;color:var(--mut);font-size:14px;text-align:center}
+@media print{header,nav,.cta{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body>
+<header><div class="w">
+  <div class="top"><img src="logo.png" alt=""><div><b>Zizo Tech ERP</b><br><a href="https://3abdelaziz11-dev.github.io/zizohub-updates/">← الصفحة الرئيسية</a></div></div>
+  <h1>البرنامج بيشتغل إزاي؟</h1>
+  <p class="lead">شرح كل حاجة في البرنامج خطوة بخطوة، من التسطيب لحد التقارير.</p>
+</div></header>
+
+<div class="w">
+<nav><b>المحتويات</b>
+  <a href="#install">التسطيب وأول مرة</a><a href="#keys">الاختصارات</a><a href="#sale">فاتورة البيع</a>
+  <a href="#repair">الصيانة</a><a href="#serial">تتبع السيريال</a><a href="#warranty">الضمان والمرتجع والاستبدال</a>
+  <a href="#inst">الأقساط</a><a href="#stock">المخزن والمشتريات</a><a href="#cash">الخزنة واليومية</a>
+  <a href="#reports">التقارير</a><a href="#staff">الموظفين والصلاحيات</a><a href="#lan">أكتر من جهاز وموبايل</a>
+  <a href="#backup">النسخ الاحتياطي والتحديثات</a><a href="#license">التجربة والتفعيل</a><a href="#faq">أسئلة متكررة</a>
+</nav>
+
+<section id="install"><h2>1) التسطيب وأول مرة</h2>
+<ol>
+  <li>حمّل البرنامج من <a href="https://github.com/3abdelaziz11-dev/zizohub-updates/releases/latest/download/ZizoTech-Setup.exe">لينك التحميل</a> وافتح الملف. لو ظهر «Windows protected your PC»: <b>More info ← Run anyway</b>.</li>
+  <li>البرنامج بيتسطّب في ثواني ويفتح لوحده، وأيقونة <b>Zizo Tech</b> بتتعمل على سطح المكتب.</li>
+  <li>شاشة الترحيب: <b>اسم المحل</b> والتليفون والعنوان (بيظهروا في الفواتير)، و<b>حساب المدير</b> (اسم دخول وباسورد). اكتبهم في ورقة وشيلها.</li>
+  <li>من <b>الإدارة والإعدادات ← إعدادات المحل</b>: اللوجو، وشروط الفاتورة، ومدد الضمان.</li>
+  <li>من <b>الحسابات والفلوس ← الخزنة</b>: حسابات الفلوس (كاش، فودافون كاش، إنستاباي…) ورصيدها الافتتاحي.</li>
+  <li>من <b>المخزن</b>: الأقسام (لابتوب، رامات، شواحن…) والبضاعة اللي عندك.</li>
+</ol>
+<div class="tip">💡 البرنامج شغال <b>من غير نت</b>. النت محتاجه بس للتحديثات.</div></section>
+
+<section id="keys"><h2>2) الاختصارات</h2>
+<div class="keys"><span><kbd>F2</kbd> فاتورة بيع</span><span><kbd>F3</kbd> صيانة</span><span><kbd>F4</kbd> تتبع سيريال</span>
+<span><kbd>F8</kbd> الخزنة</span><span><kbd>F9</kbd> حفظ الفاتورة</span><span><kbd>Ctrl</kbd>+<kbd>K</kbd> بحث سريع</span></div>
+<div class="tip">💡 البحث السريع بيلاقي أي عميل أو فاتورة أو سيريال أو صفحة من أي مكان في البرنامج.</div></section>
+
+<section id="sale"><h2>3) فاتورة البيع</h2>
+<ol>
+  <li><kbd>F2</kbd> أو «فاتورة بيع جديدة».</li>
+  <li>اكتب تليفون العميل (البرنامج بيجيب بياناته لو اتعامل قبل كده)، أو «عميل نقدي».</li>
+  <li>دوّر على الصنف بالاسم أو امسح الباركود أو اكتب السيريال. الأجهزة بتتباع بالسيريال بتاعها.</li>
+  <li>لو العميل بيبدّل جهازه القديم: «<b>بدل مستعمل</b>»، وقيمته بتتخصم من الفاتورة والجهاز بيدخل المخزن.</li>
+  <li>اكتب المدفوع وطريقة الدفع (كاش، محفظة، أو الباقي تقسيط) ← <b>حفظ</b>.</li>
+  <li>اطبع الفاتورة أو ابعتها للعميل واتساب. الضمان بيتحسب لوحده من تاريخ البيع.</li>
+</ol>
+<div class="tip">💡 لو الحساب اللي هتدفع منه مفيهوش المبلغ، البرنامج بينبّهك ويقترح الحساب اللي فيه.</div></section>
+
+<section id="repair"><h2>4) الصيانة</h2>
+<ol>
+  <li><kbd>F3</kbd> ← استلام صيانة: بيانات العميل، والجهاز، والسيريال، والعطل، وحالة الجهاز وهو بيتسلّم.</li>
+  <li>اطبع <b>إيصال الاستلام</b> للعميل.</li>
+  <li>الفني بيضيف قطع الغيار (بتخرج من المخزن لوحدها) والأجرة.</li>
+  <li>غيّر الحالة لما الجهاز يجهز، وابعت للعميل واتساب بدوسة.</li>
+  <li>التسليم: بيتحصّل الباقي ويتقفل التذكرة.</li>
+</ol>
+<div class="tip">💡 لو الجهاز اتباع من عندك، البرنامج بيقولك لسه في الضمان ولا لأ.</div></section>
+
+<section id="serial"><h2>5) تتبع السيريال</h2>
+<p>اكتب أي سيريال (<kbd>F4</kbd>) تشوف تاريخ الجهاز كله بالترتيب: اتشرى من مين وبكام، دخل كبدل مستعمل، اتباع لمين، رجع، اتبدّل في الضمان، دخل صيانة، أو اتركّب كقطعة غيار. وكمان الضمان بتاعه لسه شغال ولا خلص.</p></section>
+
+<section id="warranty"><h2>6) الضمان والمرتجع والاستبدال</h2>
+<ul>
+  <li><b>↩ مرتجع</b>: من الفاتورة ← علّم الحاجة الراجعة ← الجهاز يرجع المخزن (أو تالف) والفلوس ترجع للعميل.</li>
+  <li><b>🔄 استبدال في الضمان</b>: من الفاتورة ← علّم الحاجة اللي فيها عيب ← اختار البديل من المخزن. البديل بيتحط على <b>نفس الفاتورة وبنفس الضمان</b>، وبيطلع إيصال استبدال.</li>
+  <li>لو الضمان خلص، الاستبدال محتاج باسورد المدير.</li>
+</ul></section>
+
+<section id="inst"><h2>7) الأقساط</h2>
+<ol>
+  <li>من الفاتورة ← «تقسيط المتبقي» ← عدد الأقساط وأول ميعاد.</li>
+  <li>التحصيل من صفحة الأقساط، وكل قسط بيتسجّل في الخزنة.</li>
+  <li>صفحة <b>رسائل واتساب</b> بتقولك مين قسطه متأخر أو قرّب، والرسالة جاهزة بدوسة.</li>
+</ol></section>
+
+<section id="stock"><h2>8) المخزن والمشتريات</h2>
+<ul>
+  <li><b>شراء بضاعة</b>: من مورد، أو من عميل (اكتب اسمه في «اسم البائع»). البضاعة بتدخل المخزن لوحدها.</li>
+  <li>جديد ومستعمل، بالسيريال أو بالكمية، وسعر بيع لكل نوع عميل.</li>
+  <li>تنبيه لما صنف يقرّب يخلص، و<b>جرد</b> يقارن اللي في البرنامج باللي على الرف.</li>
+</ul></section>
+
+<section id="cash"><h2>9) الخزنة واليومية</h2>
+<ul>
+  <li>كل الفلوس الداخلة والخارجة في حسابات (كاش، محافظ، بنك…).</li>
+  <li><b>المصروفات</b>: النوع والمبلغ ودفعت منين.</li>
+  <li><b>الوردية</b>: كل كاشير يفتح ويقفل ورديته ويعدّ الدرج.</li>
+  <li><b>قفل اليوم</b>: رصيد أول اليوم + الداخل − الخارج = رصيد آخر اليوم.</li>
+</ul></section>
+
+<section id="reports"><h2>10) التقارير</h2>
+<p>الربح والمصروفات، وأكتر الأصناف بيعاً، وأحسن العملاء، والبضاعة الراكدة، وأداء كل موظف، وكشف حساب أي عميل. وتقدر تصدّر لـ Excel.</p></section>
+
+<section id="staff"><h2>11) الموظفين والصلاحيات</h2>
+<ul>
+  <li>كل موظف بيدخل باسمه وباسورده، وليه صلاحياته (كاشير، فني، مدير…).</li>
+  <li>الكاشير مثلاً بيبيع ويعمل صيانة، بس مش بيشوف الأرباح ولا بيعدّل المخزن.</li>
+  <li><b>سجل العمليات</b>: مين عمل إيه وإمتى.</li>
+</ul></section>
+
+<section id="lan"><h2>12) أكتر من جهاز وموبايل</h2>
+<ol>
+  <li>على الجهاز الرئيسي: <b>التفعيل والتشغيل ← اسمح للأجهزة التانية</b>، فبيظهر عنوان الجهاز.</li>
+  <li>جهاز كاشير تاني: سطّب البرنامج واختار «الجهاز ده هيشتغل مع جهاز رئيسي» (مش محتاج تفعيل).</li>
+  <li>الموبايل على نفس الواي فاي: افتح المتصفح واكتب العنوان. كل الأجهزة على نفس البيانات.</li>
+</ol></section>
+
+<section id="backup"><h2>13) النسخ الاحتياطي والتحديثات</h2>
+<ul>
+  <li>البرنامج بياخد <b>نسخة أوتوماتيك كل يوم</b>.</li>
+  <li><b>هارد خارجي</b>: اربطه مرة واحدة بباسورد، وكل ما توصّله البرنامج بياخد عليه نسخة متشفّرة.</li>
+  <li><b>التحديثات</b>: لما ينزل تحديث بيظهرلك «في نسخة جديدة» ← حدّث. بياناتك مبتتأثرش.</li>
+</ul></section>
+
+<section id="license"><h2>14) التجربة والتفعيل</h2>
+<ul>
+  <li>البرنامج شغال <b>30 يوم تجربة</b> كامل. لو خلصت من غير تفعيل بيبقى «عرض بس»، و<b>بياناتك مبتتمسحش</b>.</li>
+  <li>التفعيل: <b>الإدارة والإعدادات ← التفعيل والتشغيل</b> ← ابعت «كود الجهاز» واتساب ← هيوصلك سيريال تلصقه ← مفعّل مدى الحياة.</li>
+  <li>السعر دلوقتي: <b>1,000 جنيه</b> اشتراك مدى الحياة.</li>
+</ul></section>
+
+<section id="faq"><h2>15) أسئلة متكررة</h2>
+<ul>
+  <li><b>نسيت الباسورد؟</b> في شاشة الدخول «نسيت الباسورد؟» ← ابعت «كود الطلب» للدعم ← هيوصلك كود فتح تكتب بيه باسورد جديد.</li>
+  <li><b>هسطّب ويندوز جديد أو هغيّر الجهاز؟</b> خد نسخة على الهارد الخارجي الأول وكلّم الدعم، وبياناتك بترجع بنفس اسم الدخول والباسورد.</li>
+  <li><b>البرنامج محتاج نت؟</b> لأ، شغال من غير نت. النت للتحديثات بس.</li>
+  <li><b>بياناتي فين؟</b> على جهازك انت، مش على أي سيرفر.</li>
+</ul></section>
+
+<div class="cta">
+  <a class="btn navy" href="https://github.com/3abdelaziz11-dev/zizohub-updates/releases/latest/download/ZizoTech-Setup.exe">⬇️ حمّل وجرّب 30 يوم ببلاش</a>
+  <a class="btn wa" href="https://wa.me/201055511440?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%B9%D8%A7%D9%88%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20Zizo%20Tech%20%D9%84%D9%85%D8%AD%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D8%A7%D8%A8%D8%AA%D9%88%D8%A8">💬 عندك سؤال؟ كلّمنا واتساب</a>
+</div>
+</div>
+<footer><div class="w">Zizo Tech · واتساب وتليفون: 01055511440 / 01026629360</div></footer>
+</body></html>
