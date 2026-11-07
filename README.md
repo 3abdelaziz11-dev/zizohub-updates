@@ -7,7 +7,7 @@
 **[دوس هنا عشان تحمّل آخر نسخة](https://github.com/3abdelaziz11-dev/zizohub-updates/releases/latest/download/ZizoTech-Setup.exe)**
 
 1. افتح الملف اللي اتحمّل (`ZizoTech-Setup.exe`).
-2. لو ظهر «Windows protected your PC»: دوس **More info** ← **Run anyway**.
+2. لو ظهر «Windows protected your PC»: دوس **More info** ← **Run anyway**. ([الخطوات بالصور](https://3abdelaziz11-dev.github.io/zizohub-updates/install.html))
 3. البرنامج بيتسطّب ويفتح لوحده، وبيشتغل 45 يوم تجربة. للتفعيل كلّم Zizo Tech.
 
 ## 📘 البرنامج بيشتغل إزاي؟
